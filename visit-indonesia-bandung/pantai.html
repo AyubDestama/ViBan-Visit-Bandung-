@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar destinasi pantai di pesisir selatan Jawa Barat yang dapat dijangkau dari Bandung.">
+  <title>Destinasi Pantai - Visit Indonesia</title>
+</head>
+<body>
+
+  <header>
+    <img src="img/Ayam_Icikiwir.jpeg" alt="Logo Visit Indonesia berwarna biru dengan tulisan VISIT INDONESIA" width="60" height="60">
+    <h1>Visit Indonesia</h1>
+
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li>
+          <details>
+            <summary>Destinasi</summary>
+            <ul>
+              <li><a href="pantai.html">Pantai</a></li>
+              <li><a href="gunung.html">Gunung</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#">Pengalaman</a></li>
+        <li><a href="destinasi.html">Rencanakan Perjalanan Anda</a></li>
+        <li><a href="#">Informasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="Breadcrumb">
+      <p><a href="destinasi.html">Rencanakan Perjalanan Anda</a> &gt; Pantai</p>
+    </nav>
+
+    <h2>Destinasi Pantai</h2>
+    <p>Bandung tidak punya pantai sendiri. Daftar berikut adalah pantai di pesisir selatan Jawa Barat yang paling sering dituju dari Bandung.</p>
+
+    <nav aria-label="Filter jenis destinasi">
+      <p><strong>Filter:</strong> Pantai | <a href="gunung.html">Gunung</a></p>
+    </nav>
+
+    <section aria-labelledby="judul-cari">
+      <h3 id="judul-cari">Cari Pantai</h3>
+      <form action="#" method="get">
+        <p>
+          <label for="cari-pantai">Nama pantai</label><br>
+          <input type="search" id="cari-pantai" name="kata_kunci" placeholder="Contoh: Santolo">
+        </p>
+        <p>
+          <label for="kabupaten-pantai">Kabupaten</label><br>
+          <select id="kabupaten-pantai" name="kabupaten">
+            <option value="">Semua kabupaten</option>
+            <option value="garut">Garut</option>
+            <option value="cianjur">Cianjur</option>
+            <option value="sukabumi">Sukabumi</option>
+            <option value="pangandaran">Pangandaran</option>
+          </select>
+        </p>
+        <button type="submit">Cari</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="judul-daftar">
+      <h3 id="judul-daftar">Daftar Pantai</h3>
+      <p><a href="form-destinasi.html">+ Tambah destinasi baru</a></p>
+
+      <table border="1">
+        <caption>Daftar destinasi pantai dari Bandung (data contoh, jarak perkiraan)</caption>
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Lokasi</th>
+            <th scope="col">Perkiraan Jarak dari Bandung</th>
+            <th scope="col">Keunggulan</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Pantai Sayang Heulang</td>
+            <td>Pameungpeuk, Garut</td>
+            <td>&plusmn; 145 km</td>
+            <td>Pantai selatan Garut dengan hamparan pasir dan karang</td>
+            <td><a href="detail-pantai.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Pantai Santolo</td>
+            <td>Pameungpeuk, Garut</td>
+            <td>&plusmn; 150 km</td>
+            <td>Pantai berpasir luas dengan ombak laut selatan</td>
+            <td><a href="detail-pantai.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pantai Jayanti</td>
+            <td>Cidaun, Cianjur</td>
+            <td>&plusmn; 170 km</td>
+            <td>Pantai selatan Cianjur dengan pemandangan laut lepas</td>
+            <td><a href="detail-pantai.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Pantai Karang Hawu</td>
+            <td>Pelabuhan Ratu, Sukabumi</td>
+            <td>&plusmn; 200 km</td>
+            <td>Tebing karang dan ombak besar</td>
+            <td><a href="detail-pantai.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Pantai Pangandaran</td>
+            <td>Pangandaran</td>
+            <td>&plusmn; 220 km</td>
+            <td>Bisa melihat matahari terbit dan terbenam dari satu pantai</td>
+            <td><a href="detail-pantai.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Pantai Ujung Genteng</td>
+            <td>Ciracap, Sukabumi</td>
+            <td>&plusmn; 270 km</td>
+            <td>Pantai yang dikenal sebagai lokasi penyu bertelur</td>
+            <td><a href="detail-pantai.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Visit Indonesia. Dibuat untuk tugas kuliah, data hanya contoh.</p>
+  </footer>
+
+</body>
+</html>

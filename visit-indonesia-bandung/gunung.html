@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar destinasi gunung di Bandung dan sekitarnya.">
+  <title>Destinasi Gunung - Visit Indonesia</title>
+</head>
+<body>
+
+  <header>
+    <img src="img/ayam_icikiwir.jpeg" alt="Logo Visit Indonesia berwarna biru dengan tulisan VISIT INDONESIA" width="60" height="60">
+    <h1>Visit Indonesia</h1>
+
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li>
+          <details>
+            <summary>Destinasi</summary>
+            <ul>
+              <li><a href="pantai.html">Pantai</a></li>
+              <li><a href="gunung.html">Gunung</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#">Pengalaman</a></li>
+        <li><a href="destinasi.html">Rencanakan Perjalanan Anda</a></li>
+        <li><a href="#">Informasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <nav aria-label="Breadcrumb">
+      <p><a href="destinasi.html">Rencanakan Perjalanan Anda</a> &gt; Gunung</p>
+    </nav>
+
+    <h2>Destinasi Gunung</h2>
+    <p>Gunung dan kawah di Bandung Raya dan sekitarnya yang dapat dikunjungi dalam sehari.</p>
+
+    <nav aria-label="Filter jenis destinasi">
+      <p><strong>Filter:</strong> <a href="pantai.html">Pantai</a> | Gunung</p>
+    </nav>
+
+    <section aria-labelledby="judul-cari">
+      <h3 id="judul-cari">Cari Gunung</h3>
+      <form action="#" method="get">
+        <p>
+          <label for="cari-gunung">Nama gunung</label><br>
+          <input type="search" id="cari-gunung" name="kata_kunci" placeholder="Contoh: Tangkuban Parahu">
+        </p>
+        <p>
+          <label for="tingkat-gunung">Tingkat kesulitan</label><br>
+          <select id="tingkat-gunung" name="tingkat">
+            <option value="">Semua tingkat</option>
+            <option value="mudah">Mudah</option>
+            <option value="sedang">Sedang</option>
+            <option value="sulit">Sulit</option>
+          </select>
+        </p>
+        <button type="submit">Cari</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="judul-daftar">
+      <h3 id="judul-daftar">Daftar Gunung</h3>
+      <p><a href="form-destinasi.html">+ Tambah destinasi baru</a></p>
+
+      <table border="1">
+        <caption>Daftar destinasi gunung di sekitar Bandung (data contoh, jarak dan tingkat kesulitan perkiraan)</caption>
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Lokasi</th>
+            <th scope="col">Ketinggian</th>
+            <th scope="col">Perkiraan Jarak dari Bandung</th>
+            <th scope="col">Tingkat Kesulitan</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Gunung Manglayang</td>
+            <td>Bandung / Sumedang</td>
+            <td>1.818 mdpl</td>
+            <td>&plusmn; 25 km</td>
+            <td>Mudah</td>
+            <td><a href="detail-gunung.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Gunung Tangkuban Parahu</td>
+            <td>Lembang, Bandung Barat</td>
+            <td>2.084 mdpl</td>
+            <td>&plusmn; 30 km</td>
+            <td>Mudah</td>
+            <td><a href="detail-gunung.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Gunung Burangrang</td>
+            <td>Bandung Barat / Purwakarta</td>
+            <td>2.050 mdpl</td>
+            <td>&plusmn; 45 km</td>
+            <td>Sedang</td>
+            <td><a href="detail-gunung.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Gunung Patuha (Kawah Putih)</td>
+            <td>Ciwidey, Kabupaten Bandung</td>
+            <td>2.434 mdpl</td>
+            <td>&plusmn; 45 km</td>
+            <td>Mudah</td>
+            <td><a href="detail-gunung.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Gunung Malabar</td>
+            <td>Pangalengan, Kabupaten Bandung</td>
+            <td>2.343 mdpl</td>
+            <td>&plusmn; 50 km</td>
+            <td>Sedang</td>
+            <td><a href="detail-gunung.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Gunung Papandayan</td>
+            <td>Cisurupan, Garut</td>
+            <td>2.665 mdpl</td>
+            <td>&plusmn; 75 km</td>
+            <td>Sedang</td>
+            <td><a href="detail-gunung.html">Detail</a> | <a href="form-destinasi.html">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Visit Indonesia. Dibuat untuk tugas kuliah, data hanya contoh.</p>
+  </footer>
+
+</body>
+</html>

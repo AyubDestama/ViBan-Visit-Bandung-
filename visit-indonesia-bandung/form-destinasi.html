@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Form tambah dan ubah data destinasi wisata di Bandung dan sekitarnya.">
+  <title>Form Destinasi - Visit Indonesia</title>
+</head>
+<body>
+
+  <header>
+    <img src="img/logo-visit-indonesia.png" alt="Logo Visit Indonesia berwarna biru dengan tulisan VISIT INDONESIA" width="200" height="60">
+    <h1>Visit Indonesia</h1>
+
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li>
+          <details>
+            <summary>Destinasi</summary>
+            <ul>
+              <li><a href="pantai.html">Pantai</a></li>
+              <li><a href="gunung.html">Gunung</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#">Pengalaman</a></li>
+        <li><a href="destinasi.html">Rencanakan Perjalanan Anda</a></li>
+        <li><a href="#">Informasi</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Form Destinasi</h2>
+    <p>Isi form berikut untuk menambah destinasi baru. Form yang sama dipakai untuk mengubah data destinasi yang sudah ada. Kolom bertanda <strong>*</strong> wajib diisi.</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <fieldset>
+        <legend>Informasi Dasar</legend>
+
+        <p>
+          <label for="nama">Nama destinasi *</label><br>
+          <input type="text" id="nama" name="nama" size="40" placeholder="Contoh: Gunung Tangkuban Parahu" required>
+        </p>
+
+        <p>
+          <label for="kabupaten">Kabupaten / kota *</label><br>
+          <select id="kabupaten" name="kabupaten" required>
+            <option value="">-- Pilih kabupaten / kota --</option>
+            <optgroup label="Bandung Raya">
+              <option value="kota-bandung">Kota Bandung</option>
+              <option value="kab-bandung">Kabupaten Bandung</option>
+              <option value="bandung-barat">Kabupaten Bandung Barat</option>
+              <option value="sumedang">Kabupaten Sumedang</option>
+            </optgroup>
+            <optgroup label="Sekitar Bandung">
+              <option value="garut">Kabupaten Garut</option>
+              <option value="cianjur">Kabupaten Cianjur</option>
+              <option value="sukabumi">Kabupaten Sukabumi</option>
+              <option value="pangandaran">Kabupaten Pangandaran</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <label for="lokasi">Lokasi lengkap *</label><br>
+          <input type="text" id="lokasi" name="lokasi" size="40" placeholder="Contoh: Lembang, Bandung Barat" required>
+        </p>
+
+        <p>
+          <label for="deskripsi">Deskripsi *</label><br>
+          <textarea id="deskripsi" name="deskripsi" rows="5" cols="50" placeholder="Ceritakan keunikan destinasi ini" required></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Jenis Destinasi *</legend>
+        <p>
+          <input type="radio" id="jenis-gunung" name="jenis" value="gunung" required>
+          <label for="jenis-gunung">Gunung</label>
+        </p>
+        <p>
+          <input type="radio" id="jenis-pantai" name="jenis" value="pantai">
+          <label for="jenis-pantai">Pantai</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detail Kunjungan</legend>
+
+        <p>
+          <label for="jarak">Perkiraan jarak dari Bandung (km)</label><br>
+          <input type="number" id="jarak" name="jarak" min="0">
+        </p>
+
+        <p>
+          <label for="ketinggian">Ketinggian (mdpl), khusus gunung</label><br>
+          <input type="number" id="ketinggian" name="ketinggian" min="0">
+        </p>
+
+        <p>
+          <label for="tiket">Harga tiket masuk (Rp)</label><br>
+          <input type="number" id="tiket" name="tiket" min="0" step="1000" placeholder="0 jika gratis">
+        </p>
+
+        <p>
+          <label for="jam-buka">Jam buka</label><br>
+          <input type="time" id="jam-buka" name="jam_buka">
+        </p>
+
+        <p>
+          <label for="jam-tutup">Jam tutup</label><br>
+          <input type="time" id="jam-tutup" name="jam_tutup">
+        </p>
+
+        <p>
+          <label for="tingkat">Tingkat kesulitan akses</label><br>
+          <select id="tingkat" name="tingkat">
+            <option value="mudah">Mudah</option>
+            <option value="sedang">Sedang</option>
+            <option value="sulit">Sulit</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fasilitas yang Tersedia</legend>
+        <p>
+          <input type="checkbox" id="fas-parkir" name="fasilitas" value="parkir">
+          <label for="fas-parkir">Area parkir</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fas-toilet" name="fasilitas" value="toilet">
+          <label for="fas-toilet">Toilet</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fas-warung" name="fasilitas" value="warung">
+          <label for="fas-warung">Warung makan</label>
+        </p>
+        <p>
+          <input type="checkbox" id="fas-penginapan" name="fasilitas" value="penginapan">
+          <label for="fas-penginapan">Penginapan atau area berkemah</label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Foto dan Kontak</legend>
+        <p>
+          <label for="foto">Foto destinasi</label><br>
+          <input type="file" id="foto" name="foto" accept="image/*">
+        </p>
+        <p>
+          <label for="email">Email pengelola</label><br>
+          <input type="email" id="email" name="email" placeholder="nama@contoh.com">
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Simpan Destinasi</button>
+        <button type="reset">Reset</button>
+        <a href="destinasi.html">Batal</a>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Visit Indonesia. Dibuat untuk tugas kuliah, data hanya contoh.</p>
+  </footer>
+
+</body>
+</html>
