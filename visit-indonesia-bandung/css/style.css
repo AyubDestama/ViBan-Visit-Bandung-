@@ -539,3 +539,68 @@
     text-decoration: underline;
   }
   
+
+/* ==RESPONSIVE: HALAMAN GUNUNG  (HP) - Yona== */
+@media (max-width: 768px) {
+  /* Halaman gunung: jarak tepi lebih kecil */
+  .halaman-gunung {
+    padding: 20px 16px 28px;
+  }
+
+  .halaman-gunung > h2 {
+    font-size: 24px;
+  }
+
+  /* Form pencarian: susun ke bawah */
+  .halaman-gunung form {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .halaman-gunung form p,
+  .halaman-gunung form fieldset.segmented {
+    flex: none;
+  }
+
+  /* Pilihan tingkat kesulitan: penuh selebar layar */
+  .halaman-gunung .segmented-group {
+    display: flex;
+    width: 100%;
+  }
+
+  .halaman-gunung form .segmented-group label {
+    flex: 1;
+    padding: 7px 8px;
+  }
+
+  .halaman-gunung form button {
+    width: 100%;
+  }
+
+  /* Tabel: bisa digeser ke samping */
+  .halaman-gunung table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Peta: judul lebih kecil */
+  .peta {
+    padding: 40px 0;
+  }
+
+  .peta-judul {
+    font-size: 28px;
+    gap: 12px;
+  }
+
+  .peta-judul::before,
+  .peta-judul::after {
+    max-width: 40px;
+  }
+
+  .peta-deskripsi {
+    letter-spacing: 1px;
+  }
+}
