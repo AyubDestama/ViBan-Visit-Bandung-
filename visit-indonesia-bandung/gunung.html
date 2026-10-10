@@ -13,7 +13,9 @@
     <!-- Kiri: Brand & Logo Utama -->
     <div class="brand">
       <img src="img/ayam_icikiwir.jpeg" alt="Logo Visit Indonesia berwarna biru dengan tulisan VISIT INDONESIA" width="60" height="60">
-      <h1>Visit Indonesia</h1>
+      <a href="index.html" class="brand-link">
+        <h1>Visit Indonesia</h1>
+      </a>
     </div>
 
     <!-- Tengah/Kanan: Navigasi Utama -->
@@ -35,7 +37,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="halaman-gunung">
     <nav aria-label="Breadcrumb">
       <p><a href="destinasi.html">Rencanakan Perjalanan Anda</a> &gt; Gunung</p>
     </nav>
@@ -55,13 +57,22 @@
           <input type="search" id="cari-gunung" name="kata_kunci" placeholder="Contoh: Tangkuban Parahu">
         </p>
         <p>
-          <label for="tingkat-gunung">Tingkat kesulitan</label><br>
-          <select id="tingkat-gunung" name="tingkat">
-            <option value="">Semua tingkat</option>
-            <option value="mudah">Mudah</option>
-            <option value="sedang">Sedang</option>
-            <option value="sulit">Sulit</option>
-          </select>
+          <fieldset class="segmented">
+            <label for="tingkat-gunung">Tingkat kesulitan</label><br>
+            <div class="segmented-group">
+              <input type="radio" id="tingkat-semua" name="tingkat" value="" checked>
+              <label for="tingkat-semua">Semua</label>
+          
+              <input type="radio" id="tingkat-mudah" name="tingkat" value="mudah">
+              <label for="tingkat-mudah">Mudah</label>
+          
+              <input type="radio" id="tingkat-sedang" name="tingkat" value="sedang">
+              <label for="tingkat-sedang">Sedang</label>
+          
+              <input type="radio" id="tingkat-sulit" name="tingkat" value="sulit">
+              <label for="tingkat-sulit">Sulit</label>
+            </div>
+          </fieldset>
         </p>
         <button type="submit">Cari</button>
       </form>
