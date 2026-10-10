@@ -1,0 +1,189 @@
+/* ==
+   1. RESET & GENERAL STYLES (Font, Background, & Alignment)
+   == */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font Property */
+  color: #333333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Alignment Teks */
+h1, h2, h3, h4 {
+  color: #222222;
+  font-weight: 600;
+}
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ==
+   2. STYLING HEADER & NAVIGATION (Styling List & Flexbox)
+   == */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Grouping Div (.brand) */
+header .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header .brand h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+header .brand img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* Styling List (ul / li) pada Navbar Horizontal */
+header nav ul {
+  list-style: none; /* Menghilangkan bullet point */
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+header nav a, 
+header nav summary {
+  text-decoration: none;
+  color: #555555;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+header nav a:hover, 
+header nav summary:hover {
+  color: #0056b3;
+}
+
+/* Menghilangkan segitiga pada <details> */
+header nav summary::-webkit-details-marker,
+header nav summary::marker {
+  display: none;
+  content: "";
+}
+
+/* Dropdown Menu */
+header nav details {
+  position: relative;
+}
+
+header nav details ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 130px;
+  margin-top: 10px;
+}
+
+header nav details ul li a {
+  display: block;
+  padding: 8px 16px;
+}
+
+header nav details ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+/* ==
+   3. STYLING KONTEN, TABEL, FORM & FOOTER
+   ==*/
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  text-align: left; /* Text Alignment */
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
+
+table caption {
+  margin-bottom: 8px;
+  font-style: italic;
+  text-align: left;
+}
+
+/* Alignment pada Footer */
+footer {
+  text-align: center; /* Text Alignment */
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ==
+   4. RESPONSIVE DESIGN (@media query)
+   == */
+/* untuk lebar layar sempit/HP (di bawah 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Mengubah susunan header dari horizontal ke vertikal */
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  header nav ul {
+    flex-direction: column; /* Navigasi berubah dari horizontal ke vertikal */
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  header nav details ul {
+    position: static; /* Dropdown menyatu secara vertikal di HP */
+    box-shadow: none;
+    border: none;
+    padding-left: 15px;
+  }
+}
