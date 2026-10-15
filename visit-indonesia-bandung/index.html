@@ -38,6 +38,7 @@
   </header>
 
   <main>
+    <!-- PETA INTERAKTIF -->
     <section class="peta" aria-labelledby="judul-peta">
       <p class="peta-kicker">Temukan Destinasi Terbaik</p>
       <h2 id="judul-peta" class="peta-judul">Peta Interaktif Provinsi Indonesia</h2>
@@ -48,44 +49,56 @@
       </div>
     </section>
 
-    <section aria-labelledby="judul-hero">
-      <figure>
-        <img src="img/tangkuban.jpg" alt="Kawah Gunung Tangkuban Parahu dikelilingi hutan hijau di Lembang, Bandung Barat" width="900" height="320">
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-labelledby="judul-hero">
+      <figure class="hero-figure">
+        <img src="img/tangkuban.jpg" alt="Kawah Gunung Tangkuban Parahu dikelilingi hutan hijau di Lembang, Bandung Barat">
         <figcaption>Gunung Tangkuban Parahu, Lembang, Bandung Barat.</figcaption>
       </figure>
-      <h2 id="judul-hero">Wonderful Indonesia: Bandung dan Sekitarnya</h2>
-      <p>Jelajahi gunung dan pantai di sekitar Bandung, Jawa Barat.</p>
-      <p><a href="destinasi.html">Rencanakan Perjalanan Anda</a></p>
+      <div style="padding: 20px 0;">
+        <h2 id="judul-hero">Wonderful Indonesia: Bandung dan Sekitarnya</h2>
+        <p>Jelajahi gunung dan pantai di sekitar Bandung, Jawa Barat.</p>
+        <p><a href="destinasi.html" class="card-link">Rencanakan Perjalanan Anda &rarr;</a></p>
+      </div>
     </section>
 
-    <section aria-labelledby="judul-populer">
+    <!-- DESTINASI POPULER -->
+    <section class="popular-section" aria-labelledby="judul-populer">
       <h2 id="judul-populer">Destinasi Populer</h2>
 
-      <article>
-        <h3>Gunung Tangkuban Parahu</h3>
-        <img src="img/tangkuban.jpg" alt="Kawah Ratu di Gunung Tangkuban Parahu dengan dinding kawah berwarna abu-abu" width="480" height="320">
-        <p>Gunung berapi di Lembang dengan kawah yang bisa dikunjungi dari tepi jalan.</p>
-        <p><a href="detail-gunung.html">Lihat detail</a></p>
-      </article>
+      <div class="card-grid">
+        <article class="card">
+          <img src="img/tangkuban.jpg" alt="Kawah Ratu di Gunung Tangkuban Parahu dengan dinding kawah berwarna abu-abu">
+          <div class="card-body">
+            <h3>Gunung Tangkuban Parahu</h3>
+            <p>Gunung berapi di Lembang dengan kawah yang bisa dikunjungi dari tepi jalan.</p>
+            <a href="detail-gunung.html" class="card-link">Lihat detail</a>
+          </div>
+        </article>
 
-      <article>
-        <h3>Kawah Putih (Gunung Patuha)</h3>
-        <img src="img/kawah putih.jpg" alt="Danau kawah berwarna putih kehijauan di Kawah Putih Ciwidey" width="480" height="320">
-        <p>Danau kawah di Ciwidey dengan air berwarna putih kehijauan.</p>
-        <p><a href="gunung.html">Lihat daftar gunung</a></p>
-      </article>
+        <article class="card">
+          <img src="img/kawah putih.jpg" alt="Danau kawah berwarna putih kehijauan di Kawah Putih Ciwidey">
+          <div class="card-body">
+            <h3>Kawah Putih (Gunung Patuha)</h3>
+            <p>Danau kawah di Ciwidey dengan air berwarna putih kehijauan.</p>
+            <a href="gunung.html" class="card-link">Lihat daftar gunung</a>
+          </div>
+        </article>
 
-      <article>
-        <h3>Pantai Santolo</h3>
-        <img src="img/pantai-santolo.jpg" alt="Pantai berpasir dengan ombak laut selatan di Pantai Santolo, Garut" width="480" height="320">
-        <p>Pantai di pesisir selatan Garut, salah satu pantai yang bisa dijangkau dari Bandung.</p>
-        <p><a href="detail-pantai.html">Lihat detail</a></p>
-      </article>
+        <article class="card">
+          <img src="img/pantai-santolo.jpg" alt="Pantai berpasir dengan ombak laut selatan di Pantai Santolo, Garut">
+          <div class="card-body">
+            <h3>Pantai Santolo</h3>
+            <p>Pantai di pesisir selatan Garut, salah satu pantai yang bisa dijangkau dari Bandung.</p>
+            <a href="detail-pantai.html" class="card-link">Lihat detail</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <aside aria-labelledby="judul-info">
-      <h2 id="judul-info">Perlu Diketahui</h2>
-      <p>Bandung berada di dataran tinggi sehingga tidak punya pantai sendiri. Pantai terdekat ada di pesisir selatan Jawa Barat dan perlu perjalanan darat beberapa jam.</p>
+    <aside aria-labelledby="judul-info" style="margin-top: 30px; padding: 15px; background-color: #fafbfc; border-left: 4px solid #0056b3; border-radius: 4px;">
+      <h2 id="judul-info" style="font-size: 1.1rem; margin-bottom: 6px;">Perlu Diketahui</h2>
+      <p style="color: #555555; font-size: 0.95rem;">Bandung berada di dataran tinggi sehingga tidak punya pantai sendiri. Pantai terdekat ada di pesisir selatan Jawa Barat dan perlu perjalanan darat beberapa jam.</p>
     </aside>
   </main>
 
