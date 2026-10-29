@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "nama": "Gunung Manglayang",
+    "lokasi": "Bandung / Sumedang",
+    "ketinggian": 1818,
+    "jarak": 25,
+    "tingkat": "mudah",
+    "lat": -6.8806,
+    "lon": 107.7336,
+    "deskripsi": "Gunung di timur Bandung yang populer untuk pendakian ringan dan berkemah. Jalurnya relatif pendek sehingga cocok untuk pemula."
+  }
+]
